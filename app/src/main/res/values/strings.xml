@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Expense Tracker</string>
+    <string name="total_expenses">Total: $0</string>
+    <string name="add_expense_button">Add Expense</string>
+    <string name="expense_name_hint">Expense Name</string>
+    <string name="expense_amount_hint">Amount</string>
+    <string name="save_expense_button">Save Expense</string>
+</resources>
