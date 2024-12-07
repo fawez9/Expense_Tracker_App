@@ -9,18 +9,19 @@
         android:id="@+id/etExpenseName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/expense_name_hint" />
+        android:hint="Expense Name"
+        android:inputType="text" />
 
     <EditText
         android:id="@+id/etExpenseAmount"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/expense_amount_hint"
+        android:hint="Amount"
         android:inputType="numberDecimal" />
 
     <Button
         android:id="@+id/btnSaveExpense"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/save_expense_button" />
+        android:text="Save Expense" />
 </LinearLayout>

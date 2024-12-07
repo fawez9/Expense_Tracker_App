@@ -30,11 +30,12 @@ public class AddExpenseActivity extends AppCompatActivity {
 
             double amount = Double.parseDouble(amountStr);
 
+            // Return the data to MainActivity
             Intent resultIntent = new Intent();
             resultIntent.putExtra("name", name);
             resultIntent.putExtra("amount", amount);
             setResult(RESULT_OK, resultIntent);
-            finish();
+            finish(); // This closes AddExpenseActivity and goes back to MainActivity
         });
     }
 }
