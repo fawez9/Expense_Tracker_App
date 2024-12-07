@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
@@ -5,26 +6,54 @@
     android:orientation="vertical"
     android:padding="16dp">
 
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Expense Tracker"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingBottom="16dp" />
+
+    <!-- Total Expenses Display -->
     <TextView
         android:id="@+id/tvTotalExpenses"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Total Expenses"
+        android:text="Total Expenses: $0.00"
         android:textSize="18sp"
-        android:gravity="center"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:paddingBottom="16dp" />
 
+    <!-- List of Expenses -->
     <ListView
         android:id="@+id/lvExpenses"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
         android:divider="@android:color/darker_gray"
-        android:dividerHeight="1dp" />
+        android:dividerHeight="1dp"
+        android:paddingBottom="16dp" />
 
+    <!-- Add Expense Button -->
     <Button
         android:id="@+id/btnAddExpense"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Add Expense" />
+        android:text="Add Expense"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/primary"
+        android:textColor="@android:color/white" />
+
+    <!-- Logout Button -->
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:backgroundTint="@color/secondary"
+        android:textColor="@android:color/white" />
+
 </LinearLayout>
